@@ -1,0 +1,19 @@
+{
+  "name": "bundlesphobia",
+  "version": "1.0.0",
+  "description": "Bundlesphobia",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:apps:app": "turbo run dev --filter=@bundlesphobia/app"
+  },
+  "repository": "https://github.com/flamrdevs/bundlesphobia.git",
+  "author": "flamrdevs <flamrdevs@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "turbo": "^1.4.3"
+  }
+}
