@@ -26,6 +26,7 @@ function convertBundlephobiaAPISizeToBundle(data: BundlephobiaAPIData["size"]): 
     name: data.name,
     version: data.version,
     description: data.description,
+
     size: size,
     downloadTime: calculateDownloadTime(size),
   };

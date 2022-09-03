@@ -18,7 +18,7 @@ type DownloadTime = {
   n5G: number;
 };
 
-type Bundle = Package & {
+type Bundle = Omit<Package, "links"> & {
   size: SizeType<number>;
   downloadTime: SizeType<DownloadTime>;
 };
